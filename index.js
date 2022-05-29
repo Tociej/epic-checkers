@@ -83,7 +83,7 @@ app.post("/checkTurn", (req, res) => {
     res.end(JSON.stringify({turn: turn}))
 })
 
-app.listen(2137, () => {
+app.listen(process.env.PORT, () => {
     console.log("startedd;ddd (@ 2137)")
 })
 
